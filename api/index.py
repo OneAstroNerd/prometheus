@@ -15,7 +15,7 @@ app = Flask(__name__)
 def home():
     return 'Hello, World!'
 
-@app.route('/inbox<id>' )
+@app.route('/inbox/<id>' )
 def home(id):
     if id == 0:
         for i in range(len(messages_)):
